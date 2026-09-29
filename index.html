@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduBot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="chat-container">
+    <header>
+      <h1>🎓 EduBot</h1>
+      <p>Education Domain AI Assistant</p>
+    </header>
+
+    <section id="chat-box" class="chat-box">
+      <div class="message bot">
+        Hello! I'm EduBot. Ask me about subjects, exams, programming,
+        study plans, or other education topics.
+      </div>
+    </section>
+
+    <form id="chat-form" class="input-area">
+      <input id="message" type="text" placeholder="Ask your education question..." autocomplete="off" required>
+      <button type="submit">Send</button>
+    </form>
+  </main>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
